@@ -303,3 +303,38 @@ html {
 .project-card:hover .project-img-container img {
     transform: scale(1.05);
 }
+
+
+.btn-cv {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 12px 30px;
+    font-size: 1.1rem;
+    font-weight: 700;
+    font-family: 'Space Grotesk', sans-serif;
+    color: white;
+    text-decoration: none;
+    
+    background: rgba(5, 10, 30, 0.6);
+    border: 2px solid rgb(222, 36, 247);
+    border-radius: 50px;
+    
+    transition: all 0.3s ease;
+    box-shadow: 0 0 10px rgba(207, 16, 255, 0.3);
+}
+
+.btn-cv:hover {
+    background-color: rgb(222, 36, 247);
+    color: white;
+    box-shadow: 
+        0 0 20px rgba(207, 16, 255, 0.6),
+        0 0 40px rgba(207, 16, 255, 0.4);
+    transform: translateY(-5px);
+}
+
+@media (max-width: 768px) {
+    .btn-cv {
+        font-size: 1rem;
+        padding: 10px 20px;
+    }
+}
