@@ -1,134 +1,121 @@
-
 <!DOCTYPE html>
-<link href="https://api.fontshare.com/v2/css?f[]=satoshi@400,700&display=swap" rel="stylesheet">
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@700&display=swap" rel="stylesheet">
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <title>Elouan Rannou – Étudiant en BUT Informatique</title>
+    <meta name="description" content="Portfolio d'Elouan Rannou, étudiant en BUT Informatique à Bordeaux, orienté back-end et architecture logicielle.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://api.fontshare.com/v2/css?f[]=satoshi@400,500,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
-<body class="container"> <div class="header"></div>
+<body>
+    <div class="route" aria-hidden="true"><div class="route-fill" id="routeFill"></div></div>
 
-    <nav class="navbar">
-        <div id="link">
+    <header class="navbar">
+        <a href="#home" class="brand">Elouan Rannou</a>
+        <button class="burger" id="burger" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="link">
+            <span></span><span></span>
+        </button>
+        <nav id="link">
             <a href="#home">Home</a>
             <a href="#aboutme">About Me</a>
             <a href="#projects">Projects</a>
-            <a href="#contact">Contact</a>      
-            <a href="https://github.com/Elouran" target="_blank"><img src="img/github.png" alt="GitHub Logo"></a>
-            <a href="https://www.linkedin.com/in/elouan-rannou-2aba0730b/" target="_blank"><img src="img/linkedin.png" alt="LinkedIn Logo"></a> 
-        </div>
-    </nav>
-    
-    <section id="home">
-    <div id="presentation">
-    <img src="img/pdp.jpg" alt="photo de profil" id="pdp">
-    <h1 class="nom">
-        <span>Rannou Elouan</span>
-    </h1>
-        <h2>Etudiant en BUT informatique</h2>
-        <a href="CV_Rannou_Elouan.pdf" class="btn-cv" download>Télécharger mon CV</a>
-    </div>
-    
-    <section id="aboutme" class="aboutMeSection">
-        <h2>About Me</h2>
-        <div class="aboutMeContent">
-            <img src="img/aboutme.png" alt="About Me illustration" id="aboutmeimg">
-            
-            <div class="alignParagraphs">
-                <p>Je m’appelle Elouan Rannou, j’ai 19 ans et je suis actuellement étudiant en BUT Informatique à Bordeaux. 
-                    Passionné par l’informatique, je m’oriente particulièrement vers le développement back-end et l’architecture logicielle, 
-                </p>
-                <p>
-                    Curieux, j’apprécie relever des défis et approfondir ma compréhension des systèmes informatiques. En dehors de mes études, 
-                    je pratique l’escalade(Cette 7A qui veut pas passer) et le VTT, des disciplines qui m’ont appris la persévérance, la gestion de l’effort et le dépassement de soi.
-                    Je m’intéresse également aux sports mécaniques, surtout le MotoGP.
-                </p>
-            </div>
-        </div>
-    </section>
+            <a href="#contact">Contact</a>
+            <a href="https://github.com/Elouran" target="_blank" rel="noopener" class="icon-link" aria-label="GitHub"><img src="img/github.png" alt=""></a>
+            <a href="https://www.linkedin.com/in/elouan-rannou-2aba0730b/" target="_blank" rel="noopener" class="icon-link" aria-label="LinkedIn"><img src="img/linkedin.png" alt=""></a>
+        </nav>
+    </header>
 
-   <section id="projects">
-    <h2>Projects</h2>
-    <div class="projects-grid">
-        <div class="project-card">
-           <div class="project-img-container">
-            <img src="img/SAE.png" alt="Capture d'écran du projet Java">
-            </div>
-            <div class="project-info">
-                <h3>App de traitement de données</h3>
-                <p>Développement d'une application en C# permettant de créer des graphiques sur des données en exploitant une BD</p>
-                <div class="tech-stack">
-                    <span>C#</span>
-                    <span>SQL</span>
+    <main>
+        <section id="home">
+            <div class="hero">
+                <div class="hero-text">
+                    <p class="hero-role">Étudiant en BUT Informatique · Bordeaux</p>
+                    <h1 class="nom"><span>Elouan</span><span>Rannou</span></h1>
+                    <p class="hero-sub">A la recherche d’un stage de 14 semaines </p>
+                    <div class="hero-actions">
+                        <a href="CV_Rannou_Elouan.pdf" class="btn-cv" download>Télécharger mon CV</a>
+                        <a href="#projects" class="btn-ghost">Voir mes projets</a>
+                    </div>
                 </div>
-                <a href="https://github.com/Elouran/AppTraitementDonn-es" class="project-link" target="_blank">Voir le code →</a>
+                <img src="img/pdp.jpg" alt="Photo d'Elouan" id="pdp">
             </div>
-        </div>
+        </section>
 
-        <div class="project-card">
-           <div class="project-img-container">
-            <img src="img/bash.png" alt="Capture d'écran du projet Java">
-            </div>
-            <div class="project-info">
-                <h3>Programme Bash</h3>
-                <p>Création d'un programme en Bash pour afficher et trier des recettes de cuisines</p>
-                <div class="tech-stack">
-                    <span>Bash</span>
+        <section id="aboutme">
+            <h2>About Me</h2>
+            <div class="about-grid">
+                <div class="about-text">
+                    <p>Je m’appelle Elouan Rannou, j’ai 19 ans et je suis étudiant en BUT Informatique à Bordeaux.
+                        Passionné par l’informatique, je m’oriente vers le développement back-end et la programmation orientée objet avec pour objectif de poursuivre une carrière dans l'industrie.</p>
+                    <p>Curieux, j’aime relever des défis et comprendre comment les systèmes fonctionnent. En dehors des cours,
+                        je fais de l’escalade (cette 7A qui ne veut pas passer) et du VTT : deux disciplines qui m’ont appris la persévérance,
+                        la gestion de l’effort et le dépassement de soi. Je suis aussi le MotoGP de très près.</p>
+                    <ul class="tags">
+                        <li>Back-end</li><li>Architecture logicielle</li><li>Java</li><li>C#</li><li>SQL</li><li>Bash</li><li>Python</li><li>PHP</li><li>Docker</li><li>Gitlab</li>
+                    </ul>
                 </div>
-                <a href="https://github.com/Elouran/RecetteCuiseBash/blob/main/cook.sh" class="project-link" target="_blank">Voir le code →</a>
+                <img src="img/aboutme.png" alt="Illustration About Me" id="aboutmeimg">
             </div>
-        </div>
+        </section>
 
-        <div class="project-card">
-            <div class="project-img-container">
-            <img src="img/capture_lowtem1.png" alt="Capture d'écran du projet Java">
-            </div>
-            <div class="project-info">
-                <h3>Lowatem</h3>
-                <p>Jeu au tour par tour codé en Java. La première partie consistait à implémenter les règles du jeu.
-                    La seconde partie était de créer une IA pour affronter celle des autres équipes.
-                </p>
-                <div class="tech-stack">
-                    <span>Java</span>
-                </div>
-                <a href="https://github.com/Elouran/Lowatem" class="project-link" target="_blank">Voir le code →</a>
-            </div>
-        </div>
-        
-        <div class="project-card">
-            <div class="project-img-container">
-            <img src="img/Graphe.png" alt="Capture d'écran du projet Java">
-            </div>
-            <div class="project-info">
-                <h3>Logiciel de visualisation de graphe</h3>
-                <p>Application permettant de visualiser des graphes et de les réorganiser. 
-                </p>
-                <div class="tech-stack">
-                    <span>Java</span>
-                </div>
-                <a href="https://github.com/Elouran/Lowatem" class="project-link" target="_blank">Voir le code →</a>
-            </div>
-        </div>
-    </div>
-</section>
+        <section id="projects">
+            <h2>Projects</h2>
+            <div class="projects-list">
+                <article class="project">
+                    <div class="project-img"><img src="img/SAE.png" alt="Capture de l'application de traitement de données" loading="lazy"></div>
+                    <div class="project-info">
+                        <h3>App de traitement de données</h3>
+                        <p>Application en C# qui génère des graphiques à partir de données stockées dans une base de données.</p>
+                        <div class="tech-stack"><span>C#</span><span>SQL</span></div>
+                        <a href="https://github.com/Elouran/AppTraitementDonn-es" class="project-link" target="_blank" rel="noopener">Voir le code →</a>
+                    </div>
+                </article>
 
-<section id="contact">
-    <h2>Contact</h2>
-    <div class="contact-container">
-        <div class="contact-text">
-            <p>Une question sur mon parcours ou simplement envie de discuter de MotoGP ou d'escalade ?</p>
-            <p>N'hésitez pas à m'envoyer un message !</p>
-            <div class="contact-info-item">📍 Bordeaux, France</div>
-            <div class="contact-info-item">✉️ elouran0612@gmail.Com</div>
-        </div>
-    </div>
-</section>
-<script src="script.js"></script>
+                <article class="project">
+                    <div class="project-img"><img src="img/bash.png" alt="Capture du programme Bash" loading="lazy"></div>
+                    <div class="project-info">
+                        <h3>Programme Bash</h3>
+                        <p>Programme en Bash pour afficher et trier des recettes de cuisine.</p>
+                        <div class="tech-stack"><span>Bash</span></div>
+                        <a href="https://github.com/Elouran/RecetteCuiseBash/blob/main/cook.sh" class="project-link" target="_blank" rel="noopener">Voir le code →</a>
+                    </div>
+                </article>
+
+                <article class="project">
+                    <div class="project-img"><img src="img/capture_lowtem1.png" alt="Capture du jeu Lowatem" loading="lazy"></div>
+                    <div class="project-info">
+                        <h3>Lowatem</h3>
+                        <p>Jeu au tour par tour en Java. D'abord l'implémentation des règles, puis une IA pour affronter celles des autres équipes.</p>
+                        <div class="tech-stack"><span>Java</span></div>
+                        <a href="https://github.com/Elouran/Lowatem" class="project-link" target="_blank" rel="noopener">Voir le code →</a>
+                    </div>
+                </article>
+
+                <article class="project">
+                    <div class="project-img"><img src="img/Graphe.png" alt="Capture du logiciel de visualisation de graphe" loading="lazy"></div>
+                    <div class="project-info">
+                        <h3>Logiciel de visualisation de graphe</h3>
+                        <p>Application pour visualiser des graphes et les réorganiser.</p>
+                        <div class="tech-stack"><span>Java</span></div>
+                        <!-- ⚠️ Ce lien pointe vers le dépôt Lowatem : à remplacer par le bon dépôt -->
+                        <a href="https://github.com/Elouran/Lowatem" class="project-link" target="_blank" rel="noopener">Voir le code →</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Contact</h2>
+            <p class="contact-lead">Une question sur mon parcours, ou envie de parler MotoGP ou escalade ? Écris-moi.</p>
+            <a class="contact-mail" href="mailto:elouran0612@gmail.com">elouran0612@gmail.com</a>
+            <p class="contact-place">Bordeaux, France</p>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
 </body>
 </html>
